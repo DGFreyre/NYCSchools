@@ -14,6 +14,15 @@
 		2225AF3C2AACC06400BDDBAE /* NYCSchoolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2225AF3B2AACC06400BDDBAE /* NYCSchoolsTests.swift */; };
 		2225AF462AACC06400BDDBAE /* NYCSchoolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2225AF452AACC06400BDDBAE /* NYCSchoolsUITests.swift */; };
 		2225AF482AACC06400BDDBAE /* NYCSchoolsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2225AF472AACC06400BDDBAE /* NYCSchoolsUITestsLaunchTests.swift */; };
+		2225AF582AACD02100BDDBAE /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2225AF572AACD02100BDDBAE /* APIServiceProtocol.swift */; };
+		2225AF5A2AACD09200BDDBAE /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2225AF592AACD09200BDDBAE /* NetworkError.swift */; };
+		2225AF5C2AACD1D800BDDBAE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2225AF5B2AACD1D800BDDBAE /* Constants.swift */; };
+		2225AF5E2AACD3BA00BDDBAE /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2225AF5D2AACD3BA00BDDBAE /* APIService.swift */; };
+		2225AF622AACD88300BDDBAE /* SchoolsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2225AF612AACD88300BDDBAE /* SchoolsViewModel.swift */; };
+		2225AF652AACE4D000BDDBAE /* SchoolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2225AF642AACE4D000BDDBAE /* SchoolModel.swift */; };
+		2225AF672AAD7C1300BDDBAE /* SATDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2225AF662AAD7C1300BDDBAE /* SATDetailViewModel.swift */; };
+		2225AF692AAD7C8900BDDBAE /* SATModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2225AF682AAD7C8900BDDBAE /* SATModel.swift */; };
+		2225AF6B2AAD80C700BDDBAE /* SATSchoolInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2225AF6A2AAD80C700BDDBAE /* SATSchoolInformationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +53,15 @@
 		2225AF412AACC06400BDDBAE /* NYCSchoolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYCSchoolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2225AF452AACC06400BDDBAE /* NYCSchoolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCSchoolsUITests.swift; sourceTree = "<group>"; };
 		2225AF472AACC06400BDDBAE /* NYCSchoolsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCSchoolsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2225AF572AACD02100BDDBAE /* APIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProtocol.swift; sourceTree = "<group>"; };
+		2225AF592AACD09200BDDBAE /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		2225AF5B2AACD1D800BDDBAE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2225AF5D2AACD3BA00BDDBAE /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		2225AF612AACD88300BDDBAE /* SchoolsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsViewModel.swift; sourceTree = "<group>"; };
+		2225AF642AACE4D000BDDBAE /* SchoolModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolModel.swift; sourceTree = "<group>"; };
+		2225AF662AAD7C1300BDDBAE /* SATDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATDetailViewModel.swift; sourceTree = "<group>"; };
+		2225AF682AAD7C8900BDDBAE /* SATModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATModel.swift; sourceTree = "<group>"; };
+		2225AF6A2AAD80C700BDDBAE /* SATSchoolInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATSchoolInformationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +112,14 @@
 		2225AF292AACC06100BDDBAE /* NYCSchools */ = {
 			isa = PBXGroup;
 			children = (
-				2225AF2A2AACC06100BDDBAE /* NYCSchoolsApp.swift */,
-				2225AF2C2AACC06100BDDBAE /* ContentView.swift */,
-				2225AF2E2AACC06400BDDBAE /* Assets.xcassets */,
+				2225AF6C2AAD923400BDDBAE /* Enums */,
+				2225AF632AACE41D00BDDBAE /* Model */,
+				2225AF602AACD87000BDDBAE /* ViewModels */,
+				2225AF562AACC28400BDDBAE /* Protocols */,
+				2225AF542AACC27500BDDBAE /* Services */,
+				2225AF5F2AACD85600BDDBAE /* View */,
 				2225AF302AACC06400BDDBAE /* Preview Content */,
+				2225AF2E2AACC06400BDDBAE /* Assets.xcassets */,
 			);
 			path = NYCSchools;
 			sourceTree = "<group>";
@@ -125,6 +147,67 @@
 				2225AF472AACC06400BDDBAE /* NYCSchoolsUITestsLaunchTests.swift */,
 			);
 			path = NYCSchoolsUITests;
+			sourceTree = "<group>";
+		};
+		2225AF542AACC27500BDDBAE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2225AF552AACC27B00BDDBAE /* APIService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2225AF552AACC27B00BDDBAE /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				2225AF5D2AACD3BA00BDDBAE /* APIService.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		2225AF562AACC28400BDDBAE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2225AF572AACD02100BDDBAE /* APIServiceProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2225AF5F2AACD85600BDDBAE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2225AF2A2AACC06100BDDBAE /* NYCSchoolsApp.swift */,
+				2225AF2C2AACC06100BDDBAE /* ContentView.swift */,
+				2225AF6A2AAD80C700BDDBAE /* SATSchoolInformationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2225AF602AACD87000BDDBAE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2225AF612AACD88300BDDBAE /* SchoolsViewModel.swift */,
+				2225AF662AAD7C1300BDDBAE /* SATDetailViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2225AF632AACE41D00BDDBAE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2225AF642AACE4D000BDDBAE /* SchoolModel.swift */,
+				2225AF682AAD7C8900BDDBAE /* SATModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2225AF6C2AAD923400BDDBAE /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				2225AF5B2AACD1D800BDDBAE /* Constants.swift */,
+				2225AF592AACD09200BDDBAE /* NetworkError.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +340,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2225AF6B2AAD80C700BDDBAE /* SATSchoolInformationView.swift in Sources */,
+				2225AF5C2AACD1D800BDDBAE /* Constants.swift in Sources */,
+				2225AF582AACD02100BDDBAE /* APIServiceProtocol.swift in Sources */,
+				2225AF5A2AACD09200BDDBAE /* NetworkError.swift in Sources */,
+				2225AF622AACD88300BDDBAE /* SchoolsViewModel.swift in Sources */,
+				2225AF692AAD7C8900BDDBAE /* SATModel.swift in Sources */,
 				2225AF2D2AACC06100BDDBAE /* ContentView.swift in Sources */,
+				2225AF652AACE4D000BDDBAE /* SchoolModel.swift in Sources */,
+				2225AF672AAD7C1300BDDBAE /* SATDetailViewModel.swift in Sources */,
+				2225AF5E2AACD3BA00BDDBAE /* APIService.swift in Sources */,
 				2225AF2B2AACC06100BDDBAE /* NYCSchoolsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
