@@ -12,6 +12,7 @@ struct SchoolDetailView: View {
                 Image(Constants.blueLogo).resizable().scaledToFit().frame(width: 150)
                 Text(school.schoolName).font(.custom("MontserratAlternates-Regular", size: 20))
                 ImageCardView(location: school.location, phoneNumber: school.phoneNumber, website: school.website, schoolEmail: school.schoolEmail ?? "No email registered")
+            
                 SchoolRequirementsView(sports: school.schoolSports ?? "No Data Found")
                 Button(action: {
                     satDetails.toggle()
@@ -19,6 +20,7 @@ struct SchoolDetailView: View {
                     Text("See SAT Details").foregroundStyle(Color.white).background(
                         RoundedRectangle(cornerRadius: 10).fill(Color.blueSecondary).frame(width: 340,height: 40))
                 })
+                Spacer().frame(height: 40)
             }.frame(width: 340)
                 .popover(isPresented: $satDetails, content: {
                     SATSchoolInformationView(dbn: school.dbn)
@@ -41,13 +43,12 @@ struct SchoolRequirementsView: View {
         self.sports = sports
     }
     var body: some View {
-        VStack(alignment: .leading) {
-            HStack{
-                Text("Schools Sports:").font(.custom("ZillaSlab-Medium", size: 18))
-                Spacer()
-            }
-            Text(sports)
-        }.multilineTextAlignment(.leading).padding(.horizontal).foregroundStyle(Color.secondaryTextColor).frame(width: 340, height: 100).background(RoundedRectangle(cornerRadius: 10).fill(Color.backgroundColor).shadow(color:Color.black.opacity(0.15), radius: 4))
+        VStack(alignment: .leading){
+            Text("School Sports").font(.custom("ZillaSlab-Medium", size: 21)).foregroundStyle(Color.blueSecondary)
+            VStack(alignment: .leading) {
+                Text(sports)
+            }.multilineTextAlignment(.leading).padding(.horizontal).foregroundStyle(Color.secondaryTextColor).frame(width: 340, height: 100).background(RoundedRectangle(cornerRadius: 10).fill(Color.backgroundColor).shadow(color:Color.black.opacity(0.15), radius: 4))
+        }
     }
 }
 
@@ -66,7 +67,7 @@ struct ImageCardView: View {
     }
     var body: some View {
         VStack {
-            Image("school").resizable().scaledToFit().mask(RoundedCornersMask(corners: [.topRight, .bottomRight], radius: 20))
+            Image("school").resizable().scaledToFit().mask(RoundedCornersMask(corners: [.topRight, .bottomRight], radius: 20)).padding(.top)
             VStack(spacing:8){
                 HStack{
                     Image(systemName: "location.circle")
@@ -92,8 +93,8 @@ struct ImageCardView: View {
                     Spacer()
                 }
             }
-            .padding(.vertical)
-            .foregroundStyle(Color.gray).frame(width: 300, height: 140)
+            .padding([.vertical,.horizontal])
+            .foregroundStyle(Color.gray)
         }.background(RoundedRectangle(cornerRadius: 20).fill(Color.backgroundColor).shadow(color:Color.black.opacity(0.15), radius: 4))
     }
 }

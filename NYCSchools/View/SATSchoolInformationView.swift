@@ -14,7 +14,8 @@ struct SATSchoolInformationView: View {
             ForEach(vm.satInfo, id: \.self) { info in
                 Text(info.schoolName)
             }
-        }.onAppear{
+        }
+        .onAppear{
             vm.fetchSATData(dbn)
         }.alert(isPresented: $vm.showAlert) { 
             Alert(title: Text(vm.responseMessage),
