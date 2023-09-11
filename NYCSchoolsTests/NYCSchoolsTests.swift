@@ -19,12 +19,12 @@ final class NYCSchoolsTests: XCTestCase {
         sut = SchoolsViewModel(service: schools)
     }
     
-    func testSearch()  {
-        let text = "Long Island City High School"
-        sut.searchSchool = text
+    func testSearchExistingSchoolShouldReturnOneResult()  {
+        let schoolName = "Long Island City High School"
+        sut.searchSchool = schoolName
         sut.search()
         XCTAssertEqual(sut.searchResults.count, 1)
-        XCTAssertEqual(sut.searchResults.first!.schoolName, text)
+        XCTAssertEqual(sut.searchResults.first!.schoolName, schoolName)
     }
     
 }
