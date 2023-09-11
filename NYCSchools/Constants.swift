@@ -10,5 +10,15 @@ import Foundation
     static let splashScreenDuration = 2.0
     static let blueLogo = "logoBlue"
     static let whiteLogo = "whiteLogo"
+    static let urlMail = "mailto:"
+    static let urlPhone = "tel:"
+    static let urlLocation = "https://maps.apple.com/?address="
+    static let iconMail = "envelope.circle"
+    static let iconPhone = "phone.circle"
+    static let iconWebsite = "network"
+    static let iconLocation = "location.circle"
+   
+     
+    
     
 }
