@@ -2,6 +2,8 @@ import Foundation
 import Combine
 
 @MainActor
+
+//Use of generics promotes code reusability and type safety at compilation time
 final class SchoolsViewModel<T: APIServiceProtocol>: ObservableObject {
     
     //Property Wrappers to Listen Changes
