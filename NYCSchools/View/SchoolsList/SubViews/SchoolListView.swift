@@ -17,12 +17,12 @@ struct SchoolListView: View {
     var body: some View {
         ScrollView {
             LazyVStack {
-                ForEach(schools, id: \.self){ school in
+                ForEach(schools, id: \.self) { school in
                     NavigationLink {
                         SchoolDetailView(school: school)
                     } label: {
                         SchoolRowView(schoolName: school.schoolName, schoolCity: school.city)
-                    }.listRowSeparator(.hidden)
+                    }
                     
                 }
             }

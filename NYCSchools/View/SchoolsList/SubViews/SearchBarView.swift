@@ -24,7 +24,8 @@ struct SearchBarView: View {
                         }
                     , alignment: .trailing
                 )
-        }.font(.headline)
+        }
+        .font(.headline)
             .padding()
             .background(RoundedRectangle(cornerRadius: 25)
                 .fill(Color.backgroundColor)

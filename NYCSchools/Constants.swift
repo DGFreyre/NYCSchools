@@ -9,7 +9,6 @@ import Foundation
     static let launchScreenAnimation = "SchoolAnimation"
     static let splashScreenDuration = 2.0
     static let blueLogo = "logoBlue"
-    static let whiteLogo = "whiteLogo"
     static let urlMail = "mailto:"
     static let urlPhone = "tel:"
     static let urlLocation = "https://maps.apple.com/?address="
@@ -17,8 +16,13 @@ import Foundation
     static let iconPhone = "phone.circle"
     static let iconWebsite = "network"
     static let iconLocation = "location.circle"
-   
      
-    
-    
+     
+    enum SATTitle {
+        static let test = "SAT Test Takers:"
+        static let readingAvg = "SAT Reading Avg Score:"
+        static let mathAvg = "SAT Math Avg Score:"
+        static let writingAvg =  "SAT Writing Avg Score:"
+    }
+
 }

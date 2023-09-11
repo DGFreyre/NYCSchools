@@ -11,6 +11,7 @@ struct Schools: Codable, Hashable {
     let extracurricularActivities: String?
     let schoolSports: String?
     let city: String
+    let address: String
     
     enum CodingKeys: String, CodingKey {
         case dbn
@@ -22,6 +23,7 @@ struct Schools: Codable, Hashable {
         case extracurricularActivities = "extracurricular_activities"
         case schoolSports = "school_sports"
         case city
+        case address = "primary_address_line_1"
       
     }
 }

@@ -6,12 +6,15 @@ struct SchoolsInformationView: View {
         NavigationStack {
             ZStack {
                 Color.blueBackground.opacity(0.5).ignoresSafeArea()
-            VStack {
+                VStack {
                     HeaderTableView(searchSchool: $vm.searchSchool)
-                    SchoolListView(schools: vm.schoolsInfo)
+                    SchoolListView(schools: vm.searchResults)
+                }.onChange(of: vm.searchSchool) { _ in
+                    vm.search()
                 }
             }
-        }.onAppear {
+        }
+        .onAppear {
             vm.getSchools()
         }
     }
