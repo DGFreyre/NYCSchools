@@ -1,6 +1,5 @@
 import Foundation
 //Create the sat model and make it Hashable to use in our ForEach
-
 struct SATModel: Codable, Hashable {
     let dbn, schoolName: String
     let numOfSatTestTakers: String

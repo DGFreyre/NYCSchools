@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2225AF2B2AACC06100BDDBAE /* NYCSchoolsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2225AF2A2AACC06100BDDBAE /* NYCSchoolsApp.swift */; };
-		2225AF2D2AACC06100BDDBAE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2225AF2C2AACC06100BDDBAE /* ContentView.swift */; };
+		2225AF2D2AACC06100BDDBAE /* SchoolsInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2225AF2C2AACC06100BDDBAE /* SchoolsInformationView.swift */; };
 		2225AF2F2AACC06400BDDBAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2225AF2E2AACC06400BDDBAE /* Assets.xcassets */; };
 		2225AF322AACC06400BDDBAE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2225AF312AACC06400BDDBAE /* Preview Assets.xcassets */; };
 		2225AF3C2AACC06400BDDBAE /* NYCSchoolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2225AF3B2AACC06400BDDBAE /* NYCSchoolsTests.swift */; };
@@ -23,6 +23,23 @@
 		2225AF672AAD7C1300BDDBAE /* SATDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2225AF662AAD7C1300BDDBAE /* SATDetailViewModel.swift */; };
 		2225AF692AAD7C8900BDDBAE /* SATModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2225AF682AAD7C8900BDDBAE /* SATModel.swift */; };
 		2225AF6B2AAD80C700BDDBAE /* SATSchoolInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2225AF6A2AAD80C700BDDBAE /* SATSchoolInformationView.swift */; };
+		228947532AAE4DCF00FC29C1 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228947522AAE4DCF00FC29C1 /* LaunchScreenView.swift */; };
+		228947562AAE4E2200FC29C1 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 228947552AAE4E2200FC29C1 /* Lottie */; };
+		228947592AAE4E4E00FC29C1 /* LottieFileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228947582AAE4E4E00FC29C1 /* LottieFileView.swift */; };
+		2289475B2AAE51B300FC29C1 /* SchoolAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 2289475A2AAE51B300FC29C1 /* SchoolAnimation.json */; };
+		2289475E2AAE5ACE00FC29C1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2289475D2AAE5ACE00FC29C1 /* Colors.swift */; };
+		228947612AAE644500FC29C1 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228947602AAE644500FC29C1 /* SplashScreenView.swift */; };
+		228947652AAE737800FC29C1 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228947642AAE737800FC29C1 /* UIApplication.swift */; };
+		228947672AAE7D4300FC29C1 /* MontserratAlternates-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 228947662AAE7D4300FC29C1 /* MontserratAlternates-Regular.ttf */; };
+		2289476C2AAE804500FC29C1 /* ZillaSlab-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2289476B2AAE804500FC29C1 /* ZillaSlab-Medium.ttf */; };
+		228947722AAE987200FC29C1 /* SchoolDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228947712AAE987200FC29C1 /* SchoolDetailView.swift */; };
+		228947742AAE996600FC29C1 /* SchoolRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228947732AAE996600FC29C1 /* SchoolRowView.swift */; };
+		228947762AAE999B00FC29C1 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228947752AAE999B00FC29C1 /* SearchBarView.swift */; };
+		228947782AAE99DA00FC29C1 /* SchoolListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228947772AAE99DA00FC29C1 /* SchoolListView.swift */; };
+		2289477A2AAE9A0200FC29C1 /* HeaderTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228947792AAE9A0200FC29C1 /* HeaderTableView.swift */; };
+		2289477C2AAEA14A00FC29C1 /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2289477B2AAEA14A00FC29C1 /* Paths.swift */; };
+		2289477E2AAEA1C600FC29C1 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2289477D2AAEA1C600FC29C1 /* View.swift */; };
+		228947812AAEAD1B00FC29C1 /* RoundedCornersMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228947802AAEAD1B00FC29C1 /* RoundedCornersMask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +62,7 @@
 /* Begin PBXFileReference section */
 		2225AF272AACC06100BDDBAE /* NYCSchools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYCSchools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2225AF2A2AACC06100BDDBAE /* NYCSchoolsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCSchoolsApp.swift; sourceTree = "<group>"; };
-		2225AF2C2AACC06100BDDBAE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2225AF2C2AACC06100BDDBAE /* SchoolsInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsInformationView.swift; sourceTree = "<group>"; };
 		2225AF2E2AACC06400BDDBAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2225AF312AACC06400BDDBAE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2225AF372AACC06400BDDBAE /* NYCSchoolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYCSchoolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +79,23 @@
 		2225AF662AAD7C1300BDDBAE /* SATDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATDetailViewModel.swift; sourceTree = "<group>"; };
 		2225AF682AAD7C8900BDDBAE /* SATModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATModel.swift; sourceTree = "<group>"; };
 		2225AF6A2AAD80C700BDDBAE /* SATSchoolInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATSchoolInformationView.swift; sourceTree = "<group>"; };
+		228947522AAE4DCF00FC29C1 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
+		228947582AAE4E4E00FC29C1 /* LottieFileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieFileView.swift; sourceTree = "<group>"; };
+		2289475A2AAE51B300FC29C1 /* SchoolAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SchoolAnimation.json; sourceTree = "<group>"; };
+		2289475D2AAE5ACE00FC29C1 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		228947602AAE644500FC29C1 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		228947642AAE737800FC29C1 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		228947662AAE7D4300FC29C1 /* MontserratAlternates-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-Regular.ttf"; sourceTree = "<group>"; };
+		2289476A2AAE7E9500FC29C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2289476B2AAE804500FC29C1 /* ZillaSlab-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZillaSlab-Medium.ttf"; sourceTree = "<group>"; };
+		228947712AAE987200FC29C1 /* SchoolDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailView.swift; sourceTree = "<group>"; };
+		228947732AAE996600FC29C1 /* SchoolRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolRowView.swift; sourceTree = "<group>"; };
+		228947752AAE999B00FC29C1 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		228947772AAE99DA00FC29C1 /* SchoolListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolListView.swift; sourceTree = "<group>"; };
+		228947792AAE9A0200FC29C1 /* HeaderTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableView.swift; sourceTree = "<group>"; };
+		2289477B2AAEA14A00FC29C1 /* Paths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paths.swift; sourceTree = "<group>"; };
+		2289477D2AAEA1C600FC29C1 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		228947802AAEAD1B00FC29C1 /* RoundedCornersMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornersMask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				228947562AAE4E2200FC29C1 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +147,11 @@
 		2225AF292AACC06100BDDBAE /* NYCSchools */ = {
 			isa = PBXGroup;
 			children = (
+				2289476A2AAE7E9500FC29C1 /* Info.plist */,
+				228947662AAE7D4300FC29C1 /* MontserratAlternates-Regular.ttf */,
+				2289476B2AAE804500FC29C1 /* ZillaSlab-Medium.ttf */,
+				2289475C2AAE5ABE00FC29C1 /* Extensions */,
+				228947572AAE4E2900FC29C1 /* LottieConfiguration */,
 				2225AF6C2AAD923400BDDBAE /* Enums */,
 				2225AF632AACE41D00BDDBAE /* Model */,
 				2225AF602AACD87000BDDBAE /* ViewModels */,
@@ -176,9 +216,13 @@
 		2225AF5F2AACD85600BDDBAE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2289477F2AAEAD0000FC29C1 /* Modifiers */,
 				2225AF2A2AACC06100BDDBAE /* NYCSchoolsApp.swift */,
-				2225AF2C2AACC06100BDDBAE /* ContentView.swift */,
-				2225AF6A2AAD80C700BDDBAE /* SATSchoolInformationView.swift */,
+				228947702AAE983700FC29C1 /* SchoolDetail */,
+				2289475F2AAE63EE00FC29C1 /* SubViews */,
+				2289476E2AAE94D600FC29C1 /* SchoolsList */,
+				2289476F2AAE950C00FC29C1 /* SaTInformation */,
+				2289476D2AAE94C700FC29C1 /* LaunchScreen */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -210,6 +254,78 @@
 			path = Enums;
 			sourceTree = "<group>";
 		};
+		228947572AAE4E2900FC29C1 /* LottieConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				2289475A2AAE51B300FC29C1 /* SchoolAnimation.json */,
+				228947582AAE4E4E00FC29C1 /* LottieFileView.swift */,
+			);
+			path = LottieConfiguration;
+			sourceTree = "<group>";
+		};
+		2289475C2AAE5ABE00FC29C1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2289475D2AAE5ACE00FC29C1 /* Colors.swift */,
+				228947642AAE737800FC29C1 /* UIApplication.swift */,
+				2289477D2AAEA1C600FC29C1 /* View.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2289475F2AAE63EE00FC29C1 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				228947732AAE996600FC29C1 /* SchoolRowView.swift */,
+				228947752AAE999B00FC29C1 /* SearchBarView.swift */,
+				228947772AAE99DA00FC29C1 /* SchoolListView.swift */,
+				228947792AAE9A0200FC29C1 /* HeaderTableView.swift */,
+				2289477B2AAEA14A00FC29C1 /* Paths.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		2289476D2AAE94C700FC29C1 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				228947602AAE644500FC29C1 /* SplashScreenView.swift */,
+				228947522AAE4DCF00FC29C1 /* LaunchScreenView.swift */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		2289476E2AAE94D600FC29C1 /* SchoolsList */ = {
+			isa = PBXGroup;
+			children = (
+				2225AF2C2AACC06100BDDBAE /* SchoolsInformationView.swift */,
+			);
+			path = SchoolsList;
+			sourceTree = "<group>";
+		};
+		2289476F2AAE950C00FC29C1 /* SaTInformation */ = {
+			isa = PBXGroup;
+			children = (
+				2225AF6A2AAD80C700BDDBAE /* SATSchoolInformationView.swift */,
+			);
+			name = SaTInformation;
+			sourceTree = "<group>";
+		};
+		228947702AAE983700FC29C1 /* SchoolDetail */ = {
+			isa = PBXGroup;
+			children = (
+				228947712AAE987200FC29C1 /* SchoolDetailView.swift */,
+			);
+			path = SchoolDetail;
+			sourceTree = "<group>";
+		};
+		2289477F2AAEAD0000FC29C1 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				228947802AAEAD1B00FC29C1 /* RoundedCornersMask.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -226,6 +342,9 @@
 			dependencies = (
 			);
 			name = NYCSchools;
+			packageProductDependencies = (
+				228947552AAE4E2200FC29C1 /* Lottie */,
+			);
 			productName = NYCSchools;
 			productReference = 2225AF272AACC06100BDDBAE /* NYCSchools.app */;
 			productType = "com.apple.product-type.application";
@@ -298,6 +417,9 @@
 				Base,
 			);
 			mainGroup = 2225AF1E2AACC06100BDDBAE;
+			packageReferences = (
+				228947542AAE4E2200FC29C1 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
 			productRefGroup = 2225AF282AACC06100BDDBAE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -314,7 +436,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2289475B2AAE51B300FC29C1 /* SchoolAnimation.json in Resources */,
 				2225AF322AACC06400BDDBAE /* Preview Assets.xcassets in Resources */,
+				2289476C2AAE804500FC29C1 /* ZillaSlab-Medium.ttf in Resources */,
+				228947672AAE7D4300FC29C1 /* MontserratAlternates-Regular.ttf in Resources */,
 				2225AF2F2AACC06400BDDBAE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,17 +465,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				228947652AAE737800FC29C1 /* UIApplication.swift in Sources */,
 				2225AF6B2AAD80C700BDDBAE /* SATSchoolInformationView.swift in Sources */,
 				2225AF5C2AACD1D800BDDBAE /* Constants.swift in Sources */,
+				228947612AAE644500FC29C1 /* SplashScreenView.swift in Sources */,
+				2289477C2AAEA14A00FC29C1 /* Paths.swift in Sources */,
+				2289477A2AAE9A0200FC29C1 /* HeaderTableView.swift in Sources */,
 				2225AF582AACD02100BDDBAE /* APIServiceProtocol.swift in Sources */,
+				2289475E2AAE5ACE00FC29C1 /* Colors.swift in Sources */,
+				228947782AAE99DA00FC29C1 /* SchoolListView.swift in Sources */,
+				2289477E2AAEA1C600FC29C1 /* View.swift in Sources */,
 				2225AF5A2AACD09200BDDBAE /* NetworkError.swift in Sources */,
+				228947742AAE996600FC29C1 /* SchoolRowView.swift in Sources */,
+				228947722AAE987200FC29C1 /* SchoolDetailView.swift in Sources */,
+				228947592AAE4E4E00FC29C1 /* LottieFileView.swift in Sources */,
 				2225AF622AACD88300BDDBAE /* SchoolsViewModel.swift in Sources */,
 				2225AF692AAD7C8900BDDBAE /* SATModel.swift in Sources */,
-				2225AF2D2AACC06100BDDBAE /* ContentView.swift in Sources */,
+				228947762AAE999B00FC29C1 /* SearchBarView.swift in Sources */,
+				2225AF2D2AACC06100BDDBAE /* SchoolsInformationView.swift in Sources */,
 				2225AF652AACE4D000BDDBAE /* SchoolModel.swift in Sources */,
 				2225AF672AAD7C1300BDDBAE /* SATDetailViewModel.swift in Sources */,
+				228947812AAEAD1B00FC29C1 /* RoundedCornersMask.swift in Sources */,
 				2225AF5E2AACD3BA00BDDBAE /* APIService.swift in Sources */,
 				2225AF2B2AACC06100BDDBAE /* NYCSchoolsApp.swift in Sources */,
+				228947532AAE4DCF00FC29C1 /* LaunchScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +655,7 @@
 				DEVELOPMENT_TEAM = 2Q67XX4323;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NYCSchools/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -546,6 +685,7 @@
 				DEVELOPMENT_TEAM = 2Q67XX4323;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NYCSchools/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -680,6 +820,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		228947542AAE4E2200FC29C1 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		228947552AAE4E2200FC29C1 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 228947542AAE4E2200FC29C1 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2225AF1F2AACC06100BDDBAE /* Project object */;
 }

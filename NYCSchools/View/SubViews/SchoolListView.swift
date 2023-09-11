@@ -8,11 +8,28 @@
 import SwiftUI
 
 struct SchoolListView: View {
+    
+    private var schools: [Schools]
+    
+    init(schools: [Schools]) {
+        self.schools = schools
+    }
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            LazyVStack {
+                ForEach(schools, id: \.self){ school in
+                    NavigationLink {
+                        SchoolDetailView(school: school)
+                    } label: {
+                        SchoolRowView(schoolName: school.schoolName, schoolCity: school.city)
+                    }.listRowSeparator(.hidden)
+                    
+                }
+            }
+        }
     }
 }
 
 #Preview {
-    SchoolListView()
+    SchoolListView(schools: [Schools]())
 }

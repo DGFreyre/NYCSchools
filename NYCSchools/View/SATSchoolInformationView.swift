@@ -2,6 +2,7 @@ import SwiftUI
 
 struct SATSchoolInformationView: View {
     @StateObject private var vm = SATDetailViewModel()
+    @Environment(\.dismiss) private var dismiss
     private var dbn: String
     
     init(dbn: String) {
@@ -17,7 +18,9 @@ struct SATSchoolInformationView: View {
             vm.fetchSATData(dbn)
         }.alert(isPresented: $vm.showAlert) { 
             Alert(title: Text(vm.responseMessage),
-                  message: Text("Please, pick another"))
+                  message: Text("Please, pick another"),  dismissButton: .cancel(Text("Ok"), action: {
+                dismiss()
+            }))
         }
     }
 }

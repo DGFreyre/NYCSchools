@@ -2,13 +2,18 @@ import Foundation
 import Combine
 
 @MainActor
-final class SchoolsViewModel: ObservableObject {
+final class SchoolsViewModel<T: APIServiceProtocol>: ObservableObject {
+    //Property Wrappers to Listen Changes
     @Published private(set) var schoolsInfo: [Schools] = []
     @Published private(set) var errorMessage = ""
-    private var cancellables = Set<AnyCancellable>()
-    private var service: APIServiceProtocol
+    @Published var searchSchool: String = ""
     
-    init(service: APIServiceProtocol = APIService() ) {
+   //Encapsulation
+    private var cancellables = Set<AnyCancellable>()
+    private var service: T
+    
+    //Dependency Injection
+    init(service: T = APIService() ) {
         self.service = service
     }
     
@@ -23,7 +28,7 @@ final class SchoolsViewModel: ObservableObject {
             } receiveValue: { [weak self] schools in
                 guard let self = self else { return }
                 self.schoolsInfo = schools
-                print(schools)
+              //  print(schools)
             }.store(in: &cancellables)
         }
 

@@ -10,11 +10,6 @@ struct Schools: Codable, Hashable {
     let website: String
     let extracurricularActivities: String?
     let schoolSports: String?
-    let requirement1_1: String?
-    let requirement2_1: String?
-    let requirement3_1: String?
-    let requirement4_1: String?
-    let requirement5_1: String?
     let city: String
     
     enum CodingKeys: String, CodingKey {
@@ -26,11 +21,6 @@ struct Schools: Codable, Hashable {
         case website
         case extracurricularActivities = "extracurricular_activities"
         case schoolSports = "school_sports"
-        case requirement1_1
-        case requirement2_1
-        case requirement3_1
-        case requirement4_1
-        case requirement5_1
         case city
       
     }
